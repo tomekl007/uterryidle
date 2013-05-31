@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+mainClassName = 'HelloUtterlyIdle'
+
+sourceCompatibility = 1.6
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    mavenRepo url: "http://repo.bodar.com/"
+}
+
+dependencies {
+    compile group: 'com.googlecode.utterlyidle', name: 'utterlyidle',
+            version: '633' // change to the latest version from https://code.google.com/p/utterlyidle/downloads/list
+}
